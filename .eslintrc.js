@@ -1,18 +1,29 @@
 module.exports = {
     "env": {
         "browser": true,
-        "commonjs": true
+        "commonjs": true,
+        "es6": true
     },
     "extends": "eslint:recommended",
+    "parserOptions": {
+        "sourceType": "module"
+    },
     "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
         "quotes": [
             "error",
-            "single"
+            "double"
         ],
-        "no-unused-vars": ["error", { "vars": "all", "args": "none" }],
         "semi": [
             "error",
-            "always"
+            "never"
         ]
     }
 };
